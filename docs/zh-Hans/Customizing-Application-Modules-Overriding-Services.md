@@ -104,7 +104,7 @@ public class MyIdentityUserAppService : IdentityUserAppService
 
 ````csharp
 [Dependency(ReplaceServices = true)]
-[ExposeServices(typeof(IdentityUserManager))]
+[ExposeServices(typeof(MyIdentityUserManager))]
 public class MyIdentityUserManager : IdentityUserManager
 {
     public MyIdentityUserManager(
